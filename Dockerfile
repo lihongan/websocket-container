@@ -15,7 +15,10 @@ RUN ln -s /usr/bin/nodejs /usr/bin/node
 RUN apt-get install -y npm
 RUN /usr/bin/npm install ws
 RUN /usr/bin/npm install node-static
- 
+
+COPY server.js /root/server.js
+COPY index.html /root/index.html
+
 EXPOSE 8080
 EXPOSE 80
  
