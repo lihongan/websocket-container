@@ -1,12 +1,10 @@
-FROM ubuntu:14.04
+FROM ubuntu:17.04
  
 MAINTAINER Hongan Li "hongli@redhat.com"
  
-ENV REFRESHED_AT 2015-04-23
+ENV REFRESHED_AT 2017-11-30
  
 RUN apt-get update
-RUN apt-get upgrade -y
- 
 RUN apt-get install -y nodejs
  
 # needs this to find the nodejs exec
